@@ -1,0 +1,29 @@
+<div class="forColor">  
+    <div class="settingUpWindow">
+        <div class="cardDiv">
+            <div class="card">
+                <div class="card-header">
+                Alocating player : {{currentAlocPlayer}}
+                </div>
+            </div>
+        </div>
+        <div class="cardDiv">
+            <div class="card">
+                <div class="card-header">
+                Remaining ships to alocate : {{shipsAmount}}
+                </div>
+            </div>
+        </div>
+
+        <div class="exampleTable">
+            <ng-container  *ngFor="let square of squares; let i = index">
+                <button (click)="setupShip(i)" class="singleSquare"> 
+                    <img *ngIf="square === 'ship'" src="/assets/images/ship.svg">
+                </button>
+            </ng-container>
+        </div>
+        <div class="buttonDiv">
+            <button type="button" class="btn btn-primary" (click)="goFurther()">Confirm</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="forColor">
+    <div class="divdiv">
+        <div class="cardDiv">
+            <div class="card border-success mb-3" style="background-color: #000000; border-radius: 15px;">
+                <div class="card-body text-success">
+                    <h2 class="card-title">Congratulations {{gameWinner}} ! </h2>
+                    <p class="card-text">Let's have a quick overview of the game process and details : </p>
+                    <div class="playersStats">
+                        <div class="firstPlayerStats">
+                            <p> {{firstPlayerName}}'s shoots : {{firstPlayerShoots}}</p>
+                            <p> {{firstPlayerName}}'s accuracy : {{firstPlayerAccuracyString}}%</p>
+                            <p> {{firstPlayerName}}'s longest hit series : {{firstPlayerLongestHitStrike}}</p>
+                            <p> {{firstPlayerName}}'s longest miss series : {{firstPlayerLongestMissStrike}}</p>
+                        </div>
+                        <div class="secondPlayerStats">
+                            <p> {{secondPlayerName}}'s shoots : {{secondPlayerShoots}}</p>
+                            <p> {{secondPlayerName}}'s accuracy : {{secondPlayerAccuracyString}}%</p>
+                            <p> {{secondPlayerName}}'s longest hit series : {{secondPlayerLongestHitStrike}}</p>
+                            <p> {{secondPlayerName}}'s longest miss series : {{secondPlayerLongestMissStrike}}</p>
+                        </div>
+                    </div>
+                    <button (click)="playAgain()" type="button" class="btn btn-outline-info">Play Again !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

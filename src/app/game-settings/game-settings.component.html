@@ -1,0 +1,13 @@
+<div class="forColor">
+  <div class="card">
+      <img src="/assets/images/ship.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+      </div>
+
+      <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="First player username :" aria-label="Username" [(ngModel)]="firstPlayerName">
+          <input type="text" class="form-control" placeholder="Second player username :" aria-label="Username" [(ngModel)]="secondPlayerName">
+      </div>
+      <button (click)="startTheGame()" type="button" class="btn btn-outline-warning">Start Game ! </button>
+  </div>
+</div>  

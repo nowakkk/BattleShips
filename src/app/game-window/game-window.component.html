@@ -1,0 +1,65 @@
+<!-- 
+<div class="gameTable">
+    <div class="firstPlayerSide">
+        <div class="ownBoard">
+            <app-game-table></app-game-table>
+            <div class="fillLabel"> {{firstPlayer}}'s board</div>
+        </div>
+    </div>
+    <div class="secondPlayerSide">
+        <div class="enemyBoard">
+            <app-game-table></app-game-table>
+            <div class="fillLabel" style="background-color: #ee0e0e"> {{secondPlayer}}'s board</div>
+        </div>
+    </div>
+</div> -->
+<div class="wholeShit">
+    <div class="playerTurn">
+        <div class="card">
+            <div class="card-header">
+                {{nextMoveFor}}'s turn
+            </div>
+        </div>
+    </div>
+
+    <div class="wholeBattlefield">
+        <div class="firstPlayerStuff">
+            <div class="cardDiv">
+                <div class="card">
+                    <div class="card-header">
+                        Board for {{firstPlayer}}
+                    </div>
+                </div>
+            </div>
+            <div class="exampleTable">
+                <ng-container  *ngFor="let square of secondPlayerMap; let i = index">
+                    <button (click)="checkSquare(i, 'player1')" class="singleSquare"> 
+                        <img *ngIf="square === 'shooted'" src="/assets/images/fire.svg">
+                        <!-- <img *ngIf="square === 'ship'" src="/assets/images/ship.svg"> -->
+                        <img *ngIf="square === 'missed'" src="/assets/images/miss.svg">
+                    </button>
+                </ng-container>
+            </div>
+        </div>
+
+        <div class="secondPlayerStuff">
+            <div class="cardDiv">
+                <div class="card">
+                    <div class="card-header">
+                        Board for {{secondPlayer}}
+                    </div>
+                </div>
+            </div>
+            <div class="exampleTable2">
+                <ng-container  *ngFor="let square of firstPlayerMap; let i = index">
+                    <button (click)="checkSquare(i, 'player2')" class="singleSquare"> 
+                        <img *ngIf="square === 'shooted'" src="/assets/images/fire.svg">
+                        <!-- <img *ngIf="square === 'ship'" src="/assets/images/ship.svg"> -->
+                        <img *ngIf="square === 'missed'" src="/assets/images/miss.svg">
+                    </button>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>
+

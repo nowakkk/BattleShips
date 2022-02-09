@@ -1,0 +1,9 @@
+<div class="exampleTable">
+    <ng-container  *ngFor="let square of squares; let i = index">
+        <button (click)="checkSquare(i)" class="singleSquare"> 
+            <img *ngIf="square === 'shooted'" src="/assets/images/fire.svg">
+            <img *ngIf="square === 'ship'" src="/assets/images/ship.svg">
+            <img *ngIf="square === 'missed'" src="/assets/images/miss.svg">
+        </button>
+    </ng-container>
+</div>
