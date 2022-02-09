@@ -9,6 +9,6 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'BattleShips';
   constructor(router: Router){
-    router.navigate(['/game-settings']);
+    router.navigate(['/game-window']);
   }
 }
