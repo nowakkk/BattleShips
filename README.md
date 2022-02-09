@@ -1,3 +1,7 @@
+# Purposes
+
+I made this app mainly to work on my design skills. Game has predefined board of 5x5 squares and 8 ships to be alocated for each player.
+
 # BattleShips
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
